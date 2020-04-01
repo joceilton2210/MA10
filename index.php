@@ -1,43 +1,20 @@
 <?php get_header(); ?>
-
-
-
 <div class="container">
-
   <div class="row">
-
     <div class="padding-20">
-
       <div class="col-md-12 margin-top-20 elban">
-
         <div>
-
           <a><img src="holder.js/728x90?auto=yes&bg=f2f2f2&text=728x90 - 1&size=12" class="img-responsive"></a></div>
-
       </div>
-
     </div>
-
     <div class="col-md-12">
-
       <div class="info-content margin-top-40">
-
         <div class="row">
-
           <div class="col-md-7 col-sm-7">
 
-
-
             <!-- SLIDE -->
-
-
-
             <div class="home-slider">
-
-
-
             <!-- INICIO DO LOOP DE SLIDE -->
-
           <?php
 
             $args = array(
@@ -1247,14 +1224,8 @@ $the_query = new WP_Query($args); ?>
 
       <?php endif; ?>
 
-          
-
-
-
-        </div>
-
-      </div>
-
+       </div>
+     </div>
     </div>
 
 
@@ -1265,60 +1236,133 @@ $the_query = new WP_Query($args); ?>
 
 
 
-    <!-- COLUNISTAS -->
+<!------------------------------------ COLUNISTAS ------------------------------------------->
+
+<div class="col-md-12 col-sm-12">
+    <h2 class="margin-bottom-15 cor-cat-politica"><b>Blogs & Colunas </b> </h2>
+    <div id="blogsecolunas" class="row padding-bottom-30">
 
 
+      <!-- Swiper -->
+      
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
 
-    <div class="col-md-12 col-sm-12">
+      /* Center slide text vertically */
+/*       display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; */
+    }
+</style>
 
-      <h2 class="margin-bottom-15 cor-cat-politica"><b>Blogs & Colunas </b> </h2>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+<!-- LOOP -->
+<?php
+$users = get_users();
+foreach ($users as $user) {?>
+<?php 
+    $img = get_field('img_fundo', 'user_'.  $user->ID );
+    $img_fundo = get_field('fundo', 'user_'.  $user->ID );
+?>
 
-      <div id="blogsecolunas" class="row padding-bottom-30">
 
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item col-md-4 col-sm active">
-
-            <article class="card style2 style-alt">
-
-              <div class="row">
-
-                <div class="col-md-5 col-sm-5"><a href="https://www.noticiaspluma.com.br/coluna/joceiltongomes">
-
-                    <div class="article-thumb circular" style="background:#FFEE34"><img src="https://www.noticiaspluma.com.br/imagens/200x200/layout/blog__f6ee90.png" class="img-responsive img-meio-dest" alt="Google permite que funcion&aacute;rios na Am&eacute;rica Latina trabalhem de casa por causa de coronav&iacute;rus"></div>
-
-                  </a></div>
-
-                <div class="col-md-7 col-sm-7">
-
-                  <div class="post-excerpt no-padding">
-
-                    <div class="meta margin-bottom-10">
-
-                      <h3><a href="https://www.noticiaspluma.com.br/coluna/joceiltongomes" style="color:#FFEE34">Joceilton Gomes </a></h3>
-
+<div class="swiper-slide">
+    <article class="card style2 style-alt">
+        <div class="row">
+            <div class="col-md-5 col-sm-5">
+                <a href="<?php echo esc_url( get_author_posts_url( $user->ID ) ); ?>">
+                    <div class="article-thumb circular" style="background: url(<?php echo $img_fundo; ?>) center center #000;">
+                        <img src="<?php echo $img; ?>" class="img-responsive img-meio-dest" alt="">
                     </div>
+                </a>
+            </div>
+            <div class="col-md-7 col-sm-7 text-left">
+                <div class="post-excerpt no-padding">
+                    <div class="meta margin-bottom-10">
+                        <a href="<?php echo esc_url( get_author_posts_url( $user->ID ) ); ?>" style="color:#FFEE34">
+                            <h3><?php echo $user->display_name; ?></h3>
+                        </a>
+                    </div>
+					<?php 
+					$args = array(
+						'author' => $user->ID,
+						'orderby' => 'date',
+						'order'   => 'DESC',
+						'posts_per_page' => 1
+					);
 
-                    <div class="meta"><span>Coronav&iacute;rus </span></div>
-
-                    <h5><a href="https://www.noticiaspluma.com.br/coluna/joceiltongomes/1-google-permite-que-funcionarios-na-america-latina-trabalhem-de-casa-por-causa-de-coronavirus.html" style="color:#FFEE34">Google permite que funcion&aacute;rios na Am&eacute;rica Latina trabalhem de casa por causa de coronav&iacute;rus </a></h5>
-
-                  </div>
-
+					$the_query = new WP_Query($args);
+					if ($the_query->have_posts()) :
+						while ($the_query->have_posts()) :
+							$the_query->the_post();  ?>
+					
+                    <a href="<?php the_permalink(); ?>" style="color:#FFEE34">
+                        <div class="meta"><span>
+							<?php $post_tags = get_the_tags();
+									if ($post_tags) {
+										echo $post_tags[0]->name;
+									} ?>
+							</span></div>
+                        <h5><?php the_title(); ?></h5>
+                    </a>
+					
+            		<?php endwhile; ?>					
+            		<?php endif; ?>
+					
                 </div>
-
-              </div>
-
-            </article>
-
-          </div>
-
+            </div>
         </div>
+    </article>     
+</div>
 
-      </div>
 
+<?php } ?>
+        
+<!-- LOOP -->
+      
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 
+  <!-- Swiper JS -->
+  <script src="../package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+
+    
+    </div>
+</div>
 
 
     <!-- CATEGORIA VIDEO  -->

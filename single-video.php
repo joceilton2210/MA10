@@ -21,15 +21,38 @@ Description: Este Template e pra Vídeos
 
 
 <!----------------------------------VIDEO---------------------------------->
-<div class="hotfix-yt-bg videos">
+<style>
+.video-black {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+#video-content p {
+    margin-bottom: 0;
+}
+#video-content p iframe {
+    width: 100%;
+    height: 460px;
+}
+</style>
+<div class="video-black">
+    <div class="container">
+        <div id="video-content" class="col-sm-12 text-center">
+            <?php the_content(); ?>
+        </div>
+    </div>
+  </div>
+
+
+<!-- <div class="hotfix-yt-bg videos">
     <div class="container hotfix-yt">
         <div class="wrapper video-sombra">
             <div class="videocontent">
-            <?php the_content(); ?>
+            <?php //the_content(); ?>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-------------------------------------VIDEO------------------------------------->
 
 <!-------------------------------------POSTAGEM CUSTOMIZADA ------------------------------------>
