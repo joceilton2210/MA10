@@ -1,0 +1,313 @@
+/* 
+	PLATAFORMA HOTFIX PRESS 
+	SISTEMA ADMINISTRÁVEL 
+	HTTP://PRESS.HOTFIX.COM.BR 
+*/
+.cor-cat-cidades a{
+	color: #FF4B05;
+}
+.cor-cat-cidades-tit a{
+	color: #FF4B05;
+}
+.cor-cat-cidades-borda a{
+	color: #FF4B05;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #FF4B05;
+	padding-bottom: 10px;
+}
+.cor-cat-cidades h1 a, .cor-cat-cidades h2 a, .cor-cat-cidades h3 a, .cor-cat-cidades h4 a, .cor-cat-cidades h5 a, .cor-cat-cidades h6 a{
+	color: #FF4B05; 
+}
+.cor-cat-cidades-tit {
+	border-top: 3px solid #FF4B05;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-concursos a{
+	color: #B68449;
+}
+.cor-cat-concursos-tit a{
+	color: #B68449;
+}
+.cor-cat-concursos-borda a{
+	color: #B68449;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #B68449;
+	padding-bottom: 10px;
+}
+.cor-cat-concursos h1 a, .cor-cat-concursos h2 a, .cor-cat-concursos h3 a, .cor-cat-concursos h4 a, .cor-cat-concursos h5 a, .cor-cat-concursos h6 a{
+	color: #B68449; 
+}
+.cor-cat-concursos-tit {
+	border-top: 3px solid #B68449;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-economia a{
+	color: #098085;
+}
+.cor-cat-economia-tit a{
+	color: #098085;
+}
+.cor-cat-economia-borda a{
+	color: #098085;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #098085;
+	padding-bottom: 10px;
+}
+.cor-cat-economia h1 a, .cor-cat-economia h2 a, .cor-cat-economia h3 a, .cor-cat-economia h4 a, .cor-cat-economia h5 a, .cor-cat-economia h6 a{
+	color: #098085; 
+}
+.cor-cat-economia-tit {
+	border-top: 3px solid #098085;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-educacao a{
+	color: #09993D;
+}
+.cor-cat-educacao-tit a{
+	color: #09993D;
+}
+.cor-cat-educacao-borda a{
+	color: #09993D;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #09993D;
+	padding-bottom: 10px;
+}
+.cor-cat-educacao h1 a, .cor-cat-educacao h2 a, .cor-cat-educacao h3 a, .cor-cat-educacao h4 a, .cor-cat-educacao h5 a, .cor-cat-educacao h6 a{
+	color: #09993D; 
+}
+.cor-cat-educacao-tit {
+	border-top: 3px solid #09993D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-entretenimento a{
+	color: #ef48A0;
+}
+.cor-cat-entretenimento-tit a{
+	color: #ef48A0;
+}
+.cor-cat-entretenimento-borda a{
+	color: #ef48A0;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #ef48A0;
+	padding-bottom: 10px;
+}
+.cor-cat-entretenimento h1 a, .cor-cat-entretenimento h2 a, .cor-cat-entretenimento h3 a, .cor-cat-entretenimento h4 a, .cor-cat-entretenimento h5 a, .cor-cat-entretenimento h6 a{
+	color: #ef48A0; 
+}
+.cor-cat-entretenimento-tit {
+	border-top: 3px solid #ef48A0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-esportes a{
+	color: #5CBA51;
+}
+.cor-cat-esportes-tit a{
+	color: #5CBA51;
+}
+.cor-cat-esportes-borda a{
+	color: #5CBA51;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #5CBA51;
+	padding-bottom: 10px;
+}
+.cor-cat-esportes h1 a, .cor-cat-esportes h2 a, .cor-cat-esportes h3 a, .cor-cat-esportes h4 a, .cor-cat-esportes h5 a, .cor-cat-esportes h6 a{
+	color: #5CBA51; 
+}
+.cor-cat-esportes-tit {
+	border-top: 3px solid #5CBA51;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-fotos a{
+	color: #E62B67;
+}
+.cor-cat-fotos-tit a{
+	color: #E62B67;
+}
+.cor-cat-fotos-borda a{
+	color: #E62B67;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #E62B67;
+	padding-bottom: 10px;
+}
+.cor-cat-fotos h1 a, .cor-cat-fotos h2 a, .cor-cat-fotos h3 a, .cor-cat-fotos h4 a, .cor-cat-fotos h5 a, .cor-cat-fotos h6 a{
+	color: #E62B67; 
+}
+.cor-cat-fotos-tit {
+	border-top: 3px solid #E62B67;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-geral a{
+	color: #F98905;
+}
+.cor-cat-geral-tit a{
+	color: #F98905;
+}
+.cor-cat-geral-borda a{
+	color: #F98905;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #F98905;
+	padding-bottom: 10px;
+}
+.cor-cat-geral h1 a, .cor-cat-geral h2 a, .cor-cat-geral h3 a, .cor-cat-geral h4 a, .cor-cat-geral h5 a, .cor-cat-geral h6 a{
+	color: #F98905; 
+}
+.cor-cat-geral-tit {
+	border-top: 3px solid #F98905;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-manchetes a{
+	color: #333333;
+}
+.cor-cat-manchetes-tit a{
+	color: #333333;
+}
+.cor-cat-manchetes-borda a{
+	color: #333333;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #333333;
+	padding-bottom: 10px;
+}
+.cor-cat-manchetes h1 a, .cor-cat-manchetes h2 a, .cor-cat-manchetes h3 a, .cor-cat-manchetes h4 a, .cor-cat-manchetes h5 a, .cor-cat-manchetes h6 a{
+	color: #333333; 
+}
+.cor-cat-manchetes-tit {
+	border-top: 3px solid #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-meio-ambiente a{
+	color: #156637;
+}
+.cor-cat-meio-ambiente-tit a{
+	color: #156637;
+}
+.cor-cat-meio-ambiente-borda a{
+	color: #156637;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #156637;
+	padding-bottom: 10px;
+}
+.cor-cat-meio-ambiente h1 a, .cor-cat-meio-ambiente h2 a, .cor-cat-meio-ambiente h3 a, .cor-cat-meio-ambiente h4 a, .cor-cat-meio-ambiente h5 a, .cor-cat-meio-ambiente h6 a{
+	color: #156637; 
+}
+.cor-cat-meio-ambiente-tit {
+	border-top: 3px solid #156637;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-policia a{
+	color: #E20000;
+}
+.cor-cat-policia-tit a{
+	color: #E20000;
+}
+.cor-cat-policia-borda a{
+	color: #E20000;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #E20000;
+	padding-bottom: 10px;
+}
+.cor-cat-policia h1 a, .cor-cat-policia h2 a, .cor-cat-policia h3 a, .cor-cat-policia h4 a, .cor-cat-policia h5 a, .cor-cat-policia h6 a{
+	color: #E20000; 
+}
+.cor-cat-policia-tit {
+	border-top: 3px solid #E20000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-politica a{
+	color: #0B7F8A;
+}
+.cor-cat-politica-tit a{
+	color: #0B7F8A;
+}
+.cor-cat-politica-borda a{
+	color: #0B7F8A;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #0B7F8A;
+	padding-bottom: 10px;
+}
+.cor-cat-politica h1 a, .cor-cat-politica h2 a, .cor-cat-politica h3 a, .cor-cat-politica h4 a, .cor-cat-politica h5 a, .cor-cat-politica h6 a{
+	color: #0B7F8A; 
+}
+.cor-cat-politica-tit {
+	border-top: 3px solid #0B7F8A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-saude a{
+	color: #006BE8;
+}
+.cor-cat-saude-tit a{
+	color: #006BE8;
+}
+.cor-cat-saude-borda a{
+	color: #006BE8;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #006BE8;
+	padding-bottom: 10px;
+}
+.cor-cat-saude h1 a, .cor-cat-saude h2 a, .cor-cat-saude h3 a, .cor-cat-saude h4 a, .cor-cat-saude h5 a, .cor-cat-saude h6 a{
+	color: #006BE8; 
+}
+.cor-cat-saude-tit {
+	border-top: 3px solid #006BE8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor-cat-tecnologia a{
+	color: #6F0043;
+}
+.cor-cat-tecnologia-tit a{
+	color: #6F0043;
+}
+.cor-cat-tecnologia-borda a{
+	color: #6F0043;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #6F0043;
+	padding-bottom: 10px;
+}
+.cor-cat-tecnologia h1 a, .cor-cat-tecnologia h2 a, .cor-cat-tecnologia h3 a, .cor-cat-tecnologia h4 a, .cor-cat-tecnologia h5 a, .cor-cat-tecnologia h6 a{
+	color: #6F0043; 
+}
+.cor-cat-tecnologia-tit {
+	border-top: 3px solid #6F0043;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
